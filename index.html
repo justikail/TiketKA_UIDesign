@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
+    <title>Tiket KA - BOOKING PLATFORM</title>
+    <meta name="og:title" content="Tiket KA - BOOKING PLATFORM" />
+    <meta
+      name="og:description"
+      content="BOOKING PLATFORM - Tiket KA adalah aplikasi berbasis web yang dirancang untuk membuat proses pemesanan tiket kereta api semudah dan senyaman mungkin. Tiket KA menawarkan antarmuka yang ramah pengguna yang memungkinkan pengguna untuk mencari jadwal kereta api, melihat ketersediaan kursi, dan memesan tiket hanya dengan beberapa klik. Tiket KA dapat menghemat waktu dan kerepotan pengguna dengan menghilangkan kebutuhan untuk secara fisik mengunjungi stasiun kereta api atau biro perjalanan untuk memesan tiket. Dengan Tiket KA, pengguna dapat memesan tiket Anda dari mana saja, kapan saja, dan menikmati pengalaman perjalanan yang bebas stres."
+    />
+    <meta
+      name="description"
+      content="BOOKING PLATFORM - Tiket KA adalah aplikasi berbasis web yang dirancang untuk membuat proses pemesanan tiket kereta api semudah dan senyaman mungkin. Tiket KA menawarkan antarmuka yang ramah pengguna yang memungkinkan pengguna untuk mencari jadwal kereta api, melihat ketersediaan kursi, dan memesan tiket hanya dengan beberapa klik. Tiket KA dapat menghemat waktu dan kerepotan pengguna dengan menghilangkan kebutuhan untuk secara fisik mengunjungi stasiun kereta api atau biro perjalanan untuk memesan tiket. Dengan Tiket KA, pengguna dapat memesan tiket Anda dari mana saja, kapan saja, dan menikmati pengalaman perjalanan yang bebas stres."
+    />
+
+    <!-- icon  -->
+    <link rel="icon" href="./image/Icon KA.png" type="image/x-icon" />
+
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- my style  -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- header start-->
+    <header>
+      <div class="logo">
+        <img src="./image/Logo2.png" alt="" />
+      </div>
+
+      <div class="navigation">
+        <a href="#pesan">Pesan Tiket</a>
+        <a href="#">Tiketku</a>
+        <img src="./image/Avatar.png" alt="My Avatar" class="avatar" />
+      </div>
+
+      <i data-feather="menu" class="hamburger"></i>
+    </header>
+    <!-- header end -->
+
+    <!-- main section start  -->
+    <main id="pesan">
+      <div class="main-image">
+        <div class="rectangle">
+          <div class="location">
+            <div class="pin-location">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="current-location">
+              <h6>Stasiun Malang Kota Baru</h6>
+              <p>Malang, Jawa Timur</p>
+            </div>
+          </div>
+
+          <div class="nonslide">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo">
+          <img src="./image/Logo2.png" alt="My Logo" />
+          <h6>Pesan Tiket Kereta Online</h6>
+          <p>Cari, Pesan, dan Nikmati Tiket Kereta dengan Mudah dan Cepat</p>
+        </div>
+
+        <form>
+          <div class="form">
+            <img src="./image/KAI.png" alt="Stasiun Awal" />
+            <select name="city" id="city" placeholder="Stasiun Awal" required>
+              <option>Stasiun Awal</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Bogor">Bogor</option>
+            </select>
+          </div>
+          <div class="form">
+            <img src="./image/KAI 2.png" alt="Stasiun Tujuan" />
+            <select name="city2" id="city2" placeholder="Stasiun Tujuan" required>
+              <option>Stasiun Tujuan</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Bogor">Bogor</option>
+            </select>
+          </div>
+          <div class="form">
+            <img src="./image/Date.png" alt="Tanggal Keberangkatan" />
+            <input type="date" placeholder="Tanggal Keberangkatan" required />
+          </div>
+          <div class="form">
+            <img src="./image/People.png" alt="Jumlah Penumpang" />
+            <select name="people" id="people" placeholder="Jumlah Penumpang" required>
+              <option>Jumlah Penumpang</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Bogor">Bogor</option>
+            </select>
+          </div>
+
+          <button class="btn1">Cari Kereta</button>
+          <button class="btn2">Cek Kode Booking</button>
+
+          <p class="footer">© 2023 PT. Tiket Kereta Api. All Rights Reserved</p>
+        </form>
+      </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
