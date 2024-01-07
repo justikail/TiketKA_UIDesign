@@ -370,6 +370,10 @@ main .container .footer {
     width: 22rem;
   }
 
+  main .container {
+    padding: 10rem 0 0 0;
+  }
+
   main .container .btn1,
   main .container .btn2 {
     width: 27rem;
@@ -419,13 +423,17 @@ main .container .footer {
     width: 22rem;
   }
 
+  main .container {
+    padding: 10rem 0 0 0;
+  }
+
   main .container .btn1,
   main .container .btn2 {
     width: 27rem;
   }
 
   main .container .footer {
-    position: absolute;
-    bottom: 4rem;
+    position: relative;
+    margin: 10rem 0;
   }
 }

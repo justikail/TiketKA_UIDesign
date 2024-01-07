@@ -108,7 +108,7 @@ Insta  : https://instagram.com/sir.ikail
           </div>
           <div class="form">
             <img src="./image/Date.png" alt="Tanggal Keberangkatan" />
-            <input type="date" placeholder="Tanggal Keberangkatan" required />
+            <input type="date" id="datepicker" min="" placeholder="Tanggal Keberangkatan" required />
           </div>
           <div class="form">
             <img src="./image/People.png" alt="Jumlah Penumpang" />
@@ -132,6 +132,23 @@ Insta  : https://instagram.com/sir.ikail
     <!-- feather icons -->
     <script>
       feather.replace();
+    </script>
+
+    <!-- datepicker disable current date -->
+    <script>
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1; //January is 0!
+      var yyyy = today.getFullYear();
+      if (dd < 10) {
+        dd = "0" + dd;
+      }
+      if (mm < 10) {
+        mm = "0" + mm;
+      }
+
+      today = yyyy + "-" + mm + "-" + dd;
+      document.getElementById("datepicker").setAttribute("min", today);
     </script>
   </body>
 </html>
